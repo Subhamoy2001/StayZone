@@ -1,0 +1,132 @@
+/* ── Property Listing Page ── */
+.listing-page {
+  padding: 120px 0 60px;
+  min-height: 100vh;
+  background: var(--gray-50);
+}
+
+.listing-header {
+  margin-bottom: 32px;
+}
+
+.listing-header h1 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--gray-900);
+  margin-bottom: 8px;
+}
+
+.listing-header p {
+  color: var(--gray-500);
+}
+
+/* Filters Bar */
+.filters-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  align-items: center;
+  background: var(--white);
+  padding: 16px 20px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-200);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.filter-group label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gray-500);
+}
+
+.filter-group input,
+.filter-group select {
+  padding: 10px 14px;
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  min-width: 150px;
+  background: var(--gray-50);
+  transition: all var(--transition-fast);
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+  border-color: var(--primary-blue);
+  background: var(--white);
+  outline: none;
+}
+
+.filters-bar .btn {
+  align-self: flex-end;
+}
+
+.listing-count {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  margin-bottom: 24px;
+}
+
+.listing-count strong {
+  color: var(--primary-blue);
+}
+
+/* Listing Grid */
+.listing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.listing-empty {
+  text-align: center;
+  padding: 80px 20px;
+  grid-column: 1 / -1;
+}
+
+.listing-empty h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--gray-700);
+  margin: 16px 0 8px;
+}
+
+.listing-empty p {
+  color: var(--gray-500);
+}
+
+@media (max-width: 1024px) {
+  .listing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .filters-bar {
+    flex-direction: column;
+  }
+  .filter-group {
+    width: 100%;
+  }
+  .filter-group input,
+  .filter-group select {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+@media (max-width: 640px) {
+  .listing-grid {
+    grid-template-columns: 1fr;
+  }
+}

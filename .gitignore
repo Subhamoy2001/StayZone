@@ -1,0 +1,44 @@
+# General
+.DS_Store
+*.log
+logs
+dist
+node_modules
+
+# Backend (Spring Boot / Maven)
+backend/target/
+backend/.gradle/
+backend/build/
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/.springBeans
+backend/.sts4-cache
+backend/bin/
+backend/.idea/
+backend/*.iws
+backend/*.iml
+backend/*.ipr
+backend/out/
+backend/.vscode/
+
+# Frontend (React / Vite)
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+frontend/.vscode/*
+!frontend/.vscode/extensions.json
+frontend/.idea/
+frontend/*.suo
+frontend/*.ntvs*
+frontend/*.njsproj
+frontend/*.sln
+frontend/*.sw?
+frontend/output.txt
+
+# OS and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
