@@ -14,7 +14,7 @@ A full-stack web application that connects property owners and tenants — allow
 
 | Layer | Technology |
 |-------|-----------|
-| Backend | Java 17, Spring Boot 3 |
+| Backend | Java 21, Spring Boot 3 |
 | Frontend | React.js |
 | Database | PostgreSQL |
 | Auth | JWT (JSON Web Tokens) |
